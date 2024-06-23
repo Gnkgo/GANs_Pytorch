@@ -301,10 +301,7 @@ for e in range(epochs):
         # calculate gradients -  or rather accumulation of gradients on loss tensor
         loss_real.backward()
 
-        # Loss on fake images
 
-        # generate batch of fake images using G
-        # Step1: creating noise to be fed as input to G
         noise = torch.randn(len(b), 100, 1, 1, device = device)
         # Step 2: feed noise to G to create a fake img (this will be reused when updating G)
         fake_img = netG(noise) 
