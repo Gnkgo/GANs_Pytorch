@@ -44,5 +44,5 @@ generated_image = np.transpose(generated_image, (1, 2, 0))
 # plt.axis('off')  
 # plt.show()
 # Save the image
-output_path = 'generated_image2.png'
+output_path = 'generated_image3.png'
 plt.imsave(output_path, generated_image)

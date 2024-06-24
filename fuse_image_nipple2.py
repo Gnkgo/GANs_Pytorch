@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 from matplotlib.widgets import Button
 
 # Load images
-original_image_path = '146.png'
-small_image_path = 'test.png'
+original_image_path = 'result.png'
+small_image_path = 'generated_image3.png'
 
 original_image = Image.open(original_image_path).convert("RGBA")
 small_image = Image.open(small_image_path).convert("RGBA")
