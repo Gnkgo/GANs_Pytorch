@@ -40,9 +40,9 @@ with torch.no_grad():
 generated_image = generated_image.squeeze(0).detach().cpu().numpy()  
 generated_image = np.transpose(generated_image, (1, 2, 0)) 
 
-# plt.imshow(generated_image)
-# plt.axis('off')  
-# plt.show()
+plt.imshow(generated_image)
+plt.axis('off')  
+plt.show()
 # Save the image
-output_path = 'generated_image6.png'
+output_path = '0.png'
 plt.imsave(output_path, generated_image)

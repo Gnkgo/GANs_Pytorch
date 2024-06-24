@@ -5,7 +5,7 @@ from matplotlib.widgets import Button
 
 # Load images
 original_image_path = 'result.png'
-small_image_path = 'generated_image1.png'
+small_image_path = 'generated_image7.png'
 
 original_image = Image.open(original_image_path).convert("RGBA")
 small_image = Image.open(small_image_path).convert("RGBA")
@@ -105,5 +105,5 @@ click_positions = interactive_placement.get_positions()
 result_image = blend_images(original_image, small_image, click_positions)
 
 # Save and show the result
-result_image.save('blended_image.png')
+result_image.save('blended_image3.png')
 result_image.show()
