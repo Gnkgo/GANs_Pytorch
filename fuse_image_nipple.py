@@ -5,7 +5,7 @@ from matplotlib.widgets import Button
 
 # Load images
 original_image_path = 'result.png'
-small_image_path = 'generated_image7.png'
+small_image_path = 'powerpoint_image.png'
 
 original_image = Image.open(original_image_path).convert("RGBA")
 small_image = Image.open(small_image_path).convert("RGBA")

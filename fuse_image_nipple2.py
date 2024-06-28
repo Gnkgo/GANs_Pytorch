@@ -4,13 +4,13 @@ import matplotlib.pyplot as plt
 from matplotlib.widgets import Button
 
 # Load images
-original_image_path = 'result.png'
-small_image_path = 'generated_image6.png'
+original_image_path = '146.jpg'
+small_image_path = 'test.jpg'
 
 original_image = Image.open(original_image_path).convert("RGBA")
 small_image = Image.open(small_image_path).convert("RGBA")
 
-# Function to create a sigmoid mask
+# Function to create a sigmoid 
 def sigmoid(x, a=10):
     return 1 / (1 + np.exp(-a * (x - 0.5)))
 
@@ -53,7 +53,7 @@ def calculate_average_color(image, position, region_size):
 
 # Function to resize the small image to 40x40 pixels
 def resize_image(image):
-    return image.resize((60, 60), Image.ANTIALIAS)
+    return image.resize((50, 50), Image.Resampling.LANCZOS)
 
 def mirror_image(image):
     return image.transpose(Image.FLIP_LEFT_RIGHT)
